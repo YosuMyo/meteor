@@ -1,0 +1,19 @@
+/* CSS declarations go here */
+.login-display-name{color: white }
+.login-button{background-color: white}
+ #main {
+    padding-top:20px;
+}/* CSS declarations go here */
+
+h1 {
+  display: inline-block;
+}
+.clearButton {
+  position: relative;
+  margin-left: 5em;
+  top: -0.3em;
+}
+
+#canvasDiv {
+    border: 5px solid red;
+}

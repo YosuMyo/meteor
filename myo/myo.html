@@ -1,0 +1,48 @@
+<head>
+  <title>MyoSub : Create drawings with Myo</title>
+</head>
+
+<body>
+  <div class="navbar navbar-static-top navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="/">Draw with Myo</a>
+        <ul class="nav pull-right">
+          <li>
+            {{> loginButtons}}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container" id="main">
+    {{> banner}}
+  </div>
+  {{> drawingSurface}}
+</body>
+
+<template name="drawingSurface">
+  <h1>{{title}}</h1>
+  <input class='clearButton' type='button' value='Clear'/>
+  <h2>Loading...</h2>
+  {{> canvas}}
+</template>
+
+<template name="canvas">
+  <div id="canvasDiv"></div>
+</template>
+
+<template name="banner">
+  <div class="container">
+    <div class="row">
+      <div class="span6">
+        <div class="well">
+          <h4>Sign in using Twitter.</h4>
+          {{loginButtons}}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
